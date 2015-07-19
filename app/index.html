@@ -2,7 +2,7 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>005</title>
+    <title>Chat-room</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="/favicon.ico">
@@ -17,63 +17,206 @@
     <!-- endbuild -->
   </head>
   <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">005</h3>
-      </div>
+      <div id="chat-panel">
+        <div id="side-bar">
+          <div id="person-info">
+            <img id="photo" src="images/photos/001.jpg"/>
+            <span id="name">无名</span>
+          </div>
+          <div id="room-list">
+            <hr class="no-margin"/>
+          </div>
+        </div>
+        <div id="chat-area">
+          <div id="down-menu" class="dropdown">
+          <div id="chat-title-bar" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <p id="chat-title">untitled room(0)</p>
+            <span class="caret"></span>
+          </div>
+            <ul id="chat-user-list" class="dropdown-menu" aria-labelledby="chat-title">
+            </ul>
+          </div>
+          <hr class="no-margin deep-color"/>
+          <div id="msg-area">
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-
+          </div>
+          <hr class="no-margin deep-color"/>
+          <div class="dropdown dropup" id="tool-bar">
+            <div id="face" class="dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              :smile:
+            </div>
+            <ul class="dropdown-menu" aria-labelledby="chat-title">
+              <li class="face-show">:blush:</li>
+              <li class="face-show">:bowtie:</li>
+              <li class="face-show">:smile:</li>
+              <li class="face-show">:laughing:</li>
+              <li class="face-show">:smiley:</li>
+              <li class="face-show">:relaxed:</li>
+              <li class="face-show">:smirk:</li>
+              <li class="face-show">:heart_eyes:</li>
+              <li class="face-show">:kissing_heart:</li>
+              <li class="face-show">:kissing_closed_eyes:</li>
+              <li class="face-show">:flushed:</li>
+              <li class="face-show">:relieved:</li>
+              <li class="face-show">:satisfied:</li>
+              <li class="face-show">:grin:</li>
+              <li class="face-show">:wink:</li>
+              <li class="face-show">:stuck_out_tongue_winking_eye:</li>
+              <li class="face-show">:stuck_out_tongue_closed_eyes:</li>
+              <li class="face-show">:grinning:</li>
+              <li class="face-show">:kissing:</li>
+              <li class="face-show">:kissing_smiling_eyes:</li>
+              <li class="face-show">:stuck_out_tongue:</li>
+              <li class="face-show">:sleeping:</li>
+              <li class="face-show">:worried:</li>
+              <li class="face-show">:frowning:</li>
+              <li class="face-show">:anguished:</li>
+              <li class="face-show">:open_mouth:</li>
+              <li class="face-show">:grimacing:</li>
+              <li class="face-show">:confused:</li>
+              <li class="face-show">:hushed:</li>
+              <li class="face-show">:expressionless:</li>
+              <li class="face-show">:unamused:</li>
+              <li class="face-show">:sweat_smile:</li>
+              <li class="face-show">:sweat:</li>
+              <li class="face-show">:disappointed_relieved:</li>
+              <li class="face-show">:weary:</li>
+              <li class="face-show">:pensive:</li>
+              <li class="face-show">:disappointed:</li>
+              <li class="face-show">:confounded:</li>
+              <li class="face-show">:fearful:</li>
+              <li class="face-show">:cold_sweat:</li>
+              <li class="face-show">:persevere:</li>
+              <li class="face-show">:cry:</li>
+              <li class="face-show">:sob:</li>
+              <li class="face-show">:joy:</li>
+              <li class="face-show">:astonished:</li>
+              <li class="face-show">:scream:</li>
+              <li class="face-show">:neckbeard:</li>
+              <li class="face-show">:tired_face:</li>
+              <li class="face-show">:angry:</li>
+              <li class="face-show">:rage:</li>
+              <li class="face-show">:triumph:</li>
+              <li class="face-show">:sleepy:</li>
+              <li class="face-show">:yum:</li>
+              <li class="face-show">:mask:</li>
+              <li class="face-show">:sunglasses:</li>
+              <li class="face-show">:dizzy_face:</li>
+              <li class="face-show">:imp:</li>
+              <li class="face-show">:smiling_imp:</li>
+              <li class="face-show">:neutral_face:</li>
+              <li class="face-show">:no_mouth:</li>
+              <li class="face-show">:innocent:</li>
+              <li class="face-show">:alien:</li>
+              <li class="face-show">:yellow_heart:</li>
+              <li class="face-show">:blue_heart:</li>
+              <li class="face-show">:purple_heart:</li>
+              <li class="face-show">:heart:</li>
+              <li class="face-show">:shit:</li>
+              <li class="face-show">:thumbsup:</li>
+              <li class="face-show">:thumbsdown:</li>
+              <li class="face-show">:ok_hand:</li>
+              <li class="face-show">:punch:</li>
+              <li class="face-show">:facepunch:</li>
+              <li class="face-show">:fist:</li>
+              <li class="face-show">:v:</li>
+              <li class="face-show">:wave:</li>
+              <li class="face-show">:hand:</li>
+              <li class="face-show">:raised_hand:</li>
+              <li class="face-show">:open_hands:</li>
+              <li class="face-show">:point_up:</li>
+              <li class="face-show">:point_down:</li>
+              <li class="face-show">:point_left:</li>
+              <li class="face-show">:point_right:</li>
+              <li class="face-show">:raised_hands:</li>
+              <li class="face-show">:pray:</li>
+            </ul>
+          </div>
+          <div id="input">
+            <textarea id="user-input" class="form-control" aria-describedby="basic-addon1"></textarea>
+            <button id="send" class="btn btn-primary">发送</button>
+          </div>
         </div>
       </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
-      </div>
-
     </div>
+    <!--模态框：用于登陆以及修改信息-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">
+            登陆
+          </h4>
+        </div>
+        <div class="modal-body">
+          <div id="error" class="alert alert-danger alert-dismissible" style="display: none">
+            <button id="close-error-btn" type="button" class="close"><span aria-hidden="true">&times;</span></button>
+            <strong>Warning! </strong> <span id="error-msg">Better check yourself, you're not looking too good.</span>
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon">用户名</span>
+            <input id="user_name" type="text" class="form-control" placeholder="nick name">
+          </div>
 
+          <div class="choose-photo panel panel-default">
+            <div class="panel-heading">选择头像</div>
+            <div class="panel-body">
+              <div id="button-group" data-toggle="buttons">
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="1"/>
+                  <img class="chat-photo" src="images/photos/001.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="2" />
+                  <img class="chat-photo" src="images/photos/002.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="3" />
+                  <img class="chat-photo" src="images/photos/003.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="4" />
+                  <img class="chat-photo" src="images/photos/004.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="5"/>
+                  <img class="chat-photo" src="images/photos/005.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="6" />
+                  <img class="chat-photo" src="images/photos/006.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="7" />
+                  <img class="chat-photo" src="images/photos/007.jpg"/>
+                </label>
+                <label class="btn btn-default col-sm-3">
+                  <input type="radio" name="rd" value="8" />
+                  <img class="chat-photo" src="images/photos/008.jpg"/>
+                </label>
+              </div>
+              </div>
+            </div>
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default"
+                  data-dismiss="modal">关闭
+          </button>
+          <button id="submit-data" type="button" class="btn btn-primary">
+            提交更改
+          </button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+    </div>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
 
         <!-- build:js(.) scripts/plugins.js -->
         <script src="bower_components/bootstrap/js/affix.js"></script>
@@ -88,6 +231,8 @@
         <script src="bower_components/bootstrap/js/scrollspy.js"></script>
         <script src="bower_components/bootstrap/js/collapse.js"></script>
         <script src="bower_components/bootstrap/js/tab.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/emojify.js/dist/js/emojify.js"></script>
         <!-- endbuild -->
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
